@@ -78,7 +78,10 @@ export const Filter = <T extends {
                     >
                         <Paragraph weight="bold"> Search Only: </Paragraph>
                         <Chip
-                            onClick={() => setSearchOnly("all")}
+                            onClick={() => {
+                                setSearchOnly("all");
+                                setFilter("");
+                            }}
                             color={memoizedSearchOnly === "all" ? theme.blue[500] : theme.grey[500]}
                             background={memoizedSearchOnly === "all" ? `${theme.blue[500]}30` : `${theme.grey[500]}30`}
                         >
