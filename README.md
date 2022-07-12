@@ -27,5 +27,8 @@ T extends {
 ## Shortcuts
 - None
 
+## Live link
+[LIVE](https://buycoins-assessment.netlify.app)
+
 The api is a simple graphql api written in node:
 [API DOCS](https://helllicarrier.herokuapp.com/graphql)
