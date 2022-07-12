@@ -7,7 +7,6 @@ import {
     InMemoryCache,
   } from '@apollo/client';
   import { onError } from '@apollo/client/link/error';
-  import { setContext } from '@apollo/client/link/context';
   import { useMemo } from 'react';
   import { useSnackbar } from 'notistack';
   import { BASE_URL } from 'src/configs';
