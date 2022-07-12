@@ -25,8 +25,7 @@ export class ErrorBoundary extends React.Component {
     ) {
       return (
         <h1>
-          Opps! something is wrong here. The developers will get on it as soon
-          as possible. Please file a bug report in the meantime.
+          Please refresh. Heroku probably went to sleep🥹.
         </h1>
       );
     }
