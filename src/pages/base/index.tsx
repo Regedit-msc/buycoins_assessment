@@ -14,10 +14,16 @@ const Base = () => {
     const [getData, { loading }] = useLazyQuery(GET_TRANSACTIONS);
 
     useEffect(() => {
+        const items = localStorage.getItem("ITEMS");
+        if (items && items !== "undefined") {
+            setInitialItems(JSON.parse(items));
+        }
         (async () => {
             const { data } = await getData();
             setInitialItems(data?.getTransactions?.data);
+            localStorage.setItem("ITEMS", JSON.stringify(data?.getTransactions?.data,));
         })();
+
     }, []);
 
 
